@@ -1,7 +1,15 @@
+'''
+    this is the main where the application will be running.
+'''
+
+import time
 from mylibrary.library import Library
-from time import sleep
 
 def main():
+    '''
+        this is where we ask the user what they are going to do.
+    '''
+
     library = Library()
 
     while True:
@@ -32,7 +40,7 @@ def main():
 
         elif choice == '5':
             print('Exiting the library...')
-            sleep(2)
+            time.sleep(2)
             break
 
         else:
@@ -40,5 +48,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-        
